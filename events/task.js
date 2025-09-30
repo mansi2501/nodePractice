@@ -17,6 +17,7 @@ let eventCounts = fs.existsSync(filePath)
         "profile-update": 0
     };
 
+
 emitter.on("user-login", (userName) => {
     eventCounts["user-login"]++;
     console.log(`${userName} logged in`);
